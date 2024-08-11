@@ -1,0 +1,1 @@
+DELETE https://puhelinluettelobackend-cool-wildflower-122.fly.dev/api/persons/2
