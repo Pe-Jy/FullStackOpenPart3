@@ -96,12 +96,12 @@ const App = () => {
             }, 5000)
           })
           .catch(error => {
-            setNotification(`Information of ${newName} has already been removed from server`)
+            setNotification(error.response.data.error)
             setNotificationType('error')
             setTimeout(() => {
               setNotification(null)
             }, 5000)
-            setPersons(persons.filter(person => person.id !== personAlreadyAdded.id))
+            // setPersons(persons.filter(person => person.id !== personAlreadyAdded.id))
           })
       }
 
